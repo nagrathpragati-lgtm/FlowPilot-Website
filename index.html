@@ -282,10 +282,57 @@ textarea.field{width:100%;min-height:180px;resize:vertical;line-height:1.7}
   .form-grid,.ai-results{grid-template-columns:1fr}
   .heading-row{align-items:start;flex-direction:column}
 }
+
+/* PREMIUM LANDING PAGE */
+#landing{min-height:100vh;background:#f7f7f2;color:#092d2b;overflow:hidden;position:relative}
+#landing *{box-sizing:border-box}
+.lnav{height:86px;display:flex;align-items:center;justify-content:space-between;padding:0 6.5%;position:relative;z-index:5}
+.lbrand{font:800 25px Manrope,sans-serif;letter-spacing:-1.5px}.lbrand span{color:#4285f4}
+.lnavlinks{display:flex;gap:34px;align-items:center}.lnavlinks a{color:#173c39;text-decoration:none;font-size:13px;font-weight:700;transition:opacity .25s}.lnavlinks a:hover{opacity:.55}
+.lnav .lcta,.lbutton{background:#092d2b;color:white;border-radius:999px;padding:14px 23px;font-weight:700;transition:transform .25s,box-shadow .25s;box-shadow:0 8px 20px #092d2b18}.lnav .lcta:hover,.lbutton:hover{transform:translateY(-3px);box-shadow:0 14px 28px #092d2b25}
+.lhero{min-height:670px;padding:82px 7% 70px;position:relative;text-align:center;display:flex;align-items:center;flex-direction:column;isolation:isolate}
+.lhero:before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,#b8e9d4aa,transparent 68%);top:10px;left:-190px;z-index:-1;animation:drift 12s ease-in-out infinite alternate}
+.lhero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,#c8dafa99,transparent 68%);right:-180px;bottom:-80px;z-index:-1;animation:drift 10s ease-in-out infinite alternate-reverse}
+.lpill{border:1px solid #dce5dc;background:#ffffffa8;padding:9px 16px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;animation:rise .8s both}
+.lhero h1{font:600 clamp(54px,7.5vw,108px)/.99 Manrope,sans-serif;letter-spacing:-7px;max-width:1100px;margin:34px auto 24px;animation:rise .9s .1s both}
+.lhero h1 .gradient{background:linear-gradient(100deg,#4285f4 4%,#34a853 42%,#fbbc05 70%,#ea4335 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lhero p{max-width:620px;font-size:17px;line-height:1.8;color:#66746e;animation:rise .9s .2s both}
+.lheroactions{display:flex;gap:13px;margin-top:30px;animation:rise .9s .3s both}.lbutton{padding:16px 25px;border:0}.lbutton.secondary{background:#fff;color:#092d2b;border:1px solid #dce5dc;box-shadow:none}
+.lvisual{width:min(1040px,90%);height:285px;margin:48px auto 0;position:relative;perspective:1000px;animation:rise 1s .35s both}
+.lmock{position:absolute;inset:0;background:#fff;border:1px solid #e3e9e2;border-radius:22px;box-shadow:0 35px 90px #092d2b20;overflow:hidden;transform:rotateX(4deg);text-align:left}
+.lmocktop{height:43px;border-bottom:1px solid #edf0ec;display:flex;align-items:center;gap:7px;padding:0 18px}.ldot{width:8px;height:8px;border-radius:50%;background:#ea4335}.ldot:nth-child(2){background:#fbbc05}.ldot:nth-child(3){background:#34a853}.lmockbody{display:grid;grid-template-columns:180px 1fr;height:calc(100% - 43px)}.lmocksidenav{background:#092d2b;padding:22px 16px;color:#d9eee5;font-size:11px;line-height:3}.lmocksidenav b{display:block;color:#fff;font-size:15px;margin-bottom:8px}.lmockmain{padding:22px 25px}.lmocktitle{font:800 20px Manrope}.lmockcards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:17px}.lmockcard{border:1px solid #e9eee8;border-radius:12px;padding:14px;min-height:105px;background:linear-gradient(145deg,#fff,#f8fbf8)}.lmockcard small{color:#7b8981}.lmockcard strong{display:block;font:800 25px Manrope;margin:8px 0}.lmockbar{height:6px;border-radius:8px;background:#e9eee8;margin-top:8px;overflow:hidden}.lmockbar i{display:block;height:100%;width:70%;background:linear-gradient(90deg,#4285f4,#34a853);border-radius:8px}
+.lfloat{position:absolute;padding:15px 18px;border-radius:15px;background:#fff;box-shadow:0 15px 40px #092d2b1b;font-weight:800;font-size:12px;animation:float 5s ease-in-out infinite}.lfloat.one{left:-32px;top:30px;transform:rotate(-5deg)}.lfloat.two{right:-35px;bottom:25px;transform:rotate(4deg);animation-delay:-2s}.lfloat em{font-style:normal;color:#34a853}
+.lsection{padding:100px 7%;}.lsectionhead{text-align:center;max-width:700px;margin:0 auto 45px}.lsectionhead small{color:#4285f4;font-weight:800;letter-spacing:1.8px}.lsectionhead h2{font:700 clamp(34px,5vw,58px)/1.08 Manrope;letter-spacing:-2.5px;margin:14px 0}.lsectionhead p{color:#6e7a74;line-height:1.8}
+.lfeatures{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.lfeature{border-radius:22px;padding:30px;min-height:245px;position:relative;overflow:hidden;transition:transform .35s,box-shadow .35s}.lfeature:hover{transform:translateY(-9px);box-shadow:0 22px 45px #092d2b17}.lfeature:nth-child(1){background:#dceaff}.lfeature:nth-child(2){background:#dff4e9}.lfeature:nth-child(3){background:#fff0d2}.lfeature:nth-child(4){background:#fce3df}.lfeature:nth-child(5){background:#e9e2fa}.lfeature:nth-child(6){background:#dff1f3}.licon{font-size:27px}.lfeature h3{font:800 22px Manrope;margin:24px 0 10px}.lfeature p{color:#566760;line-height:1.7;font-size:14px;max-width:300px}.lfeature:after{content:"✦";position:absolute;right:20px;bottom:-40px;font-size:120px;color:#ffffff80;transform:rotate(-15deg)}
+.lworkflow{background:#092d2b;color:white;border-radius:30px;padding:55px 6%;display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}.lworkflow h2{font:700 clamp(34px,4vw,52px)/1.1 Manrope;letter-spacing:-2px;margin:15px 0}.lworkflow p{color:#b7cbc4;line-height:1.8}.lsteps{display:grid;gap:12px}.lstep{display:flex;align-items:center;gap:17px;padding:17px 20px;border:1px solid #ffffff24;border-radius:15px;background:#ffffff09;transition:background .3s,transform .3s}.lstep:hover{background:#ffffff18;transform:translateX(7px)}.lstep b{width:35px;height:35px;border-radius:50%;background:linear-gradient(135deg,#4285f4,#34a853);display:grid;place-items:center}.lstep span{font-weight:700}.lstep small{margin-left:auto;color:#9cb7ac}
+.lbottom{text-align:center;padding:95px 7%;background:linear-gradient(120deg,#e4f1ff,#e8f7ed 55%,#fff2df)}.lbottom h2{font:700 clamp(38px,5vw,62px)/1.05 Manrope;letter-spacing:-3px;margin:15px auto 22px;max-width:800px}.lbottom p{color:#64736b;margin-bottom:27px}.lfooter{background:#092d2b;color:#b9ccc3;padding:30px 7%;display:flex;justify-content:space-between;gap:20px;font-size:12px}.lfooter b{color:white}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}@keyframes drift{to{transform:translate(55px,-35px) scale(1.12)}}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -13px}}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.reveal.visible{opacity:1;transform:translateY(0)}
+.app{display:none}.app.show{display:flex}
+@media(max-width:800px){.lnav{padding:0 5%;height:70px}.lnavlinks{display:none}.lhero{padding:65px 5% 45px;min-height:auto}.lhero h1{letter-spacing:-3px}.lhero p{font-size:15px}.lvisual{height:230px;width:100%;margin-top:35px}.lmocksidenav{display:none}.lmockbody{grid-template-columns:1fr}.lmockmain{padding:16px}.lmockcards{gap:6px}.lmockcard{padding:9px}.lfloat.one{left:0}.lfloat.two{right:0}.lsection{padding:70px 5%}.lfeatures{grid-template-columns:1fr}.lworkflow{grid-template-columns:1fr;padding:35px 25px}.lfooter{flex-direction:column}}
+
 </style>
 </head>
 
 <body>
+<div id="landing">
+ <nav class="lnav"><div class="lbrand">✦ Flow<span>Pilot</span></div><div class="lnavlinks"><a href="#platform">Platform</a><a href="#workflow-showcase">Workflow</a><a href="#features">Capabilities</a></div><button class="lcta" onclick="enterDashboard()">Open workspace ↗</button></nav>
+ <section class="lhero"><div class="lpill">✦ Intelligent content operations</div><h1>Make content flow.<br><span class="gradient">Not chaos.</span></h1><p>From the first draft to final approval and publishing, bring your entire content operation into one beautifully connected workspace.</p><div class="lheroactions"><button class="lbutton" onclick="enterDashboard()">Explore the platform&nbsp; →</button><a class="lbutton secondary" href="#workflow-showcase" style="text-decoration:none">See how it works</a></div>
+ <div class="lvisual"><div class="lmock"><div class="lmocktop"><i class="ldot"></i><i class="ldot"></i><i class="ldot"></i><span style="margin-left:12px;color:#89968f;font-size:10px">flowpilot.app / workspace</span></div><div class="lmockbody"><div class="lmocksidenav"><b>✦ FlowPilot</b>▣ Overview<br>▤ Content library<br>✧ AI studio<br>⇄ Editorial workflow<br>▦ Publishing calendar</div><div class="lmockmain"><div class="lmocktitle">Your content, in motion ✦</div><div style="font-size:11px;color:#829087;margin-top:4px">A clear view of everything moving through your pipeline.</div><div class="lmockcards"><div class="lmockcard"><small>Total content</small><strong>24</strong><div class="lmockbar"><i></i></div></div><div class="lmockcard"><small>In editorial review</small><strong>08</strong><div class="lmockbar"><i style="width:45%;background:#fbbc05"></i></div></div><div class="lmockcard"><small>Ready to publish</small><strong>12</strong><div class="lmockbar"><i style="width:82%;background:#34a853"></i></div></div></div><div style="margin-top:18px;border:1px solid #edf0ec;border-radius:10px;padding:12px;font-size:11px;color:#627168">✦ &nbsp; AI insights &nbsp; · &nbsp; Editorial review &nbsp; · &nbsp; Publishing schedule</div></div></div></div><div class="lfloat one">✦ AI-assisted content <em>ready</em></div><div class="lfloat two">✓ Editorial approval <em>in flow</em></div></div>
+ </section>
+ <section class="lsection" id="features"><div class="lsectionhead reveal"><small>ONE CONNECTED WORKSPACE</small><h2>Every step of content.<br>Working together.</h2><p>FlowPilot brings the moving parts of content operations into one structured process, so teams can spend less time coordinating and more time creating.</p></div><div class="lfeatures">
+ <article class="lfeature reveal"><div class="licon">✧</div><h3>AI content studio</h3><p>Explore content summaries, keyword suggestions, titles and metadata in one place.</p></article>
+ <article class="lfeature reveal"><div class="licon">⇄</div><h3>Editorial workflow</h3><p>Move drafts through review with a clear approval process and full article previews.</p></article>
+ <article class="lfeature reveal"><div class="licon">▦</div><h3>Publishing calendar</h3><p>Bring planned content and publishing dates into a single visual schedule.</p></article>
+ <article class="lfeature reveal"><div class="licon">▤</div><h3>Central content library</h3><p>Keep articles and content assets organised with searchable status tracking.</p></article>
+ <article class="lfeature reveal"><div class="licon">◷</div><h3>Activity & insights</h3><p>Follow content activity and get a snapshot of how work moves across stages.</p></article>
+ <article class="lfeature reveal"><div class="licon">⌘</div><h3>Connected publishing</h3><p>Designed to support CMS integrations as the platform moves beyond prototype stage.</p></article>
+ </div></section>
+ <section class="lsection" id="workflow-showcase"><div class="lworkflow reveal"><div><small style="color:#9be0c4;font-weight:800;letter-spacing:1.5px">A CLEARER WAY TO WORK</small><h2>From idea to published.</h2><p>A structured content journey keeps creators, editors and publishing teams aligned at every stage.</p><button class="lbutton" style="margin-top:25px;background:#fff;color:#092d2b" onclick="enterDashboard()">Explore workspace →</button></div><div class="lsteps"><div class="lstep"><b>1</b><span>Create content</span><small>Draft</small></div><div class="lstep"><b>2</b><span>AI-assisted processing</span><small>Enrich</small></div><div class="lstep"><b>3</b><span>Editorial review</span><small>Approve</small></div><div class="lstep"><b>4</b><span>Schedule & publish</span><small>Release</small></div></div></div></section>
+ <section class="lbottom"><div class="lpill">Your content operations, organised</div><h2>Bring your content workflow into focus.</h2><p>Explore the FlowPilot interactive prototype and its workspace modules.</p><button class="lbutton" onclick="enterDashboard()">Enter FlowPilot workspace&nbsp; →</button></section>
+ <footer class="lfooter"><b>✦ FlowPilot</b><span>Intelligent Content Operations · Interactive Prototype</span><span>Designed to make content flow.</span></footer>
+</div>
+
 <div class="app">
 
 <aside class="sidebar">
@@ -310,7 +357,7 @@ textarea.field{width:100%;min-height:180px;resize:vertical;line-height:1.7}
 <main class="main">
 <header class="topbar">
   <div class="crumb"><strong id="breadcrumb">Overview</strong> / FlowPilot workspace</div>
-  <div class="profile">Demo workspace <div class="avatar">P</div></div>
+  <div class="profile"><button onclick="backToHome()" style="background:transparent;color:inherit;font-weight:700;margin-right:16px">← Home</button>Demo workspace <div class="avatar">P</div></div>
 </header>
 
 <div class="page">
@@ -640,6 +687,11 @@ function renderAnalytics(){
  document.getElementById("eventCount").textContent=activity.length;
  document.getElementById("activityLog").innerHTML=activity.slice(0,12).map(x=>`<div>• ${escapeHTML(x)}</div>`).join("");
 }
+
+function enterDashboard(){document.getElementById("landing").style.display="none";document.querySelector(".app").classList.add("show");window.scrollTo({top:0,behavior:"smooth"});}
+function backToHome(){document.getElementById("landing").style.display="block";document.querySelector(".app").classList.remove("show");window.scrollTo({top:0,behavior:"smooth"});}
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>revealObserver.observe(el));
+
 render();
 renderCalendar();
 </script>
